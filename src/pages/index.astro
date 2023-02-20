@@ -1,5 +1,10 @@
 ---
 import Button from "@components/Button/"
+
+const characters = await fetch(
+  "https://finalspaceapi.com/api/v0/character?limit=5"
+).then((res) => res.json())
+console.log("characters", characters)
 ---
 
 <html lang="en">
