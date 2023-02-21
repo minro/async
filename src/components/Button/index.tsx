@@ -7,8 +7,12 @@ type ButtonProps = {
 const Button = (props: ButtonProps) => {
 	const { children } = props
 
+	const handleOnClick = () => {
+		alert("Hello Astro!")
+	}
+
 	return (
-		<button>{ children ? children : null }</button>
+		<button onClick={handleOnClick}>{ children ? children : null }</button>
 	)
 }
 
